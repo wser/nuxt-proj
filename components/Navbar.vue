@@ -23,7 +23,8 @@ v-navigation-drawer(:mini-variant='$store.state.miniVariant',
       return {
         icons: [
 					// add new icon here (above the first one)
-
+					
+          { icon: 'receipt' },
           { icon: 'bubble_chart' },
           { icon: 'home' },
 				],
@@ -39,6 +40,7 @@ v-navigation-drawer(:mini-variant='$store.state.miniVariant',
 			getLinks () {
 
 				let o = this.$router.options.routes
+				console.log (o)
 				let ic = this.icons
 				let x = this.excluders
 				//removes elements from array o by values from array x

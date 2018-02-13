@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 const createStore = () => {
   return new Vuex.Store({
     state: {
-			drawer: false,
+			drawer: true,
 			miniVariant: false,
 			clipped: false,
 			fixed: false,
