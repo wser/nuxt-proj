@@ -22,8 +22,10 @@ v-navigation-drawer(:mini-variant='$store.state.miniVariant',
 		data() {
       return {
         icons: [
+					// add new icon here (above the first one)
+
+          { icon: 'bubble_chart' },
           { icon: 'home' },
-          { icon: 'bubble_chart' }
 				],
 				excluders: ['404', 'recipes-id', 'custom'],
 				itemz: []
@@ -42,7 +44,7 @@ v-navigation-drawer(:mini-variant='$store.state.miniVariant',
 				//removes elements from array o by values from array x
 				for (let j = 0; j < x.length; j++) {
 					for( let i = o.length; i--;){
-						o[i].id = i								// add index to o array
+						o[i].id = i								// add id to o array
 						if (o[i].name === x[j]) o.splice(i, 1)
 					}
 				}
