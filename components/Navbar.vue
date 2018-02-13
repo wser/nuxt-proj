@@ -23,7 +23,8 @@ v-navigation-drawer(:mini-variant='$store.state.miniVariant',
       return {
         icons: [
 					// add new icon here (above the first one)
-					
+
+          { icon: 'grid_on' },
           { icon: 'receipt' },
           { icon: 'bubble_chart' },
           { icon: 'home' },
