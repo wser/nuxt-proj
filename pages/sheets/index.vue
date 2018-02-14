@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import config from "@/plugins/config"
+import config from "@/-sensitive/config"
 import axios from "axios"
 
 export default {
