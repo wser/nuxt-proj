@@ -8,7 +8,8 @@ const createStore = () => {
 			clipped: false,
 			fixed: false,
 			rightDrawer: false,
-			right: true
+			right: true,
+			dark: false
     },
     mutations: {
       setDrawer (state) {
@@ -34,7 +35,11 @@ const createStore = () => {
 			setRight (state) {
 				state.right = !state.right
 			//	console.log(state.right)
-      }
+			},
+			setDark(state) {
+				state.dark = !state.dark
+			//	console.log(state.dark)
+			}
     }
   })
 }

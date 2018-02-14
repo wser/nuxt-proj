@@ -1,5 +1,5 @@
 <template lang="pug">
-v-app()
+v-app(:dark="$store.state.dark")
   Navbar
   Toolbar
   v-content
